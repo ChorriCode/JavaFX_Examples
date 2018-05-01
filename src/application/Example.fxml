@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.effect.*?>
@@ -7,22 +10,52 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="303.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InicioController">
-  <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-  </rowConstraints>
+<VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InicioController">
    <children>
-      <Button fx:id="button1" mnemonicParsing="false" onAction="#showExample1" text="Circulos" GridPane.halignment="CENTER" />
-      <Button fx:id="button2" mnemonicParsing="false" onAction="#showExample2" text="WebSample" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-      <Button fx:id="button3" mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-      <Button fx:id="button4" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-      <Button fx:id="button5" mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-      <Button fx:id="button6" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="152.0" prefWidth="301.0" style="-fx-background-color: #655;">
+         <children>
+            <Button fx:id="button11" mnemonicParsing="false" onAction="#showExample1" style="-fx-background-color: #977;" text="Circulos" textFill="WHITE" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="button21" mnemonicParsing="false" onAction="#showExample2" style="-fx-background-color: #977;" text="WebSample" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="button31" mnemonicParsing="false" onAction="#showExample3" style="-fx-background-color: #977;" text="Login" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="button41" mnemonicParsing="false" onAction="#showExample4" style="-fx-background-color: #977;" text="Animation" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="button51" mnemonicParsing="false" onAction="#showExample5" style="-fx-background-color: #977;" text="HelloEffects" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="button61" mnemonicParsing="false" onAction="#showExample6" style="-fx-background-color: #977;" text="CanvasTest" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ImageView fitHeight="91.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./oracle-java-javafx-jdk.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </ImageView>
    </children>
-</GridPane>
+</VBox>
